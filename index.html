@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerar Procuração</title>
+</head>
+<body>
+
+   <section>
+        <div>
+            <div>
+                <div><h1>Preencha e gere uma procuração judicial:</h1></div>
+                <form>
+                    <fieldset id="box_outorgante">
+                        <legend>Dados do outorgante</legend>
+                        <p>Aquele que irá assinar a procuração e dar poderes ao advogado:</p>
+
+                        <label>Nome do outorgante</label>
+                        <input type="text" required id="nomeOutorgante" placeholder="Digite o nome completo">
+
+                        <label>Nacionalidade</label>
+                        <input type="text" required id="nacionalidadeOutorgante" placeholder="País de origem">
+
+                        <label for="estadoCivil">Estado civil</label>
+                        <select id="estadoCivil_outorgante" name="estadoCivil" required >
+                            <option disabled selected>Selecione</option>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="separado">Separado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                        </select>
+
+                        <label>Profissão</label>
+                        <input id="profissao_outorgante" type="text" placeholder="Digite aqui">
+
+                        <label>CPF</label>
+                        <input id="cpf_outorgante" type="text" inputmode="numeric" placeholder="Digite inclusive os pontos" required>
+
+                        <label>Email</label>
+                        <input id="email_outorgante" type="email" placeholder="digite aqui" required>
+
+                        <label>Endereço</label>
+                        <input id="endereco_outorgante" type="text" placeholder="Rua, número, bairro, cidade, estado, CEP, complemento" required>
+
+                        <input id="ir_outorgado" type="button" value="Próxima etapa" >
+                    </fieldset>
+
+        <!------------------------------------------------------------------------------------------------->
+
+                    <fieldset id="box_outorgado">
+                        <legend>Dados do outorgado</legend>
+                        <p>Aquele que receberá os poderes, geralmente um advogado</p>
+
+                        <label>Nome do outorgado</label>
+                        <input type="text" required id="nomeOutorgado" placeholder="Digite o nome completo">
+
+                        <label>Nacionalidade</label>
+                        <input type="text" required id="nacionalidadeOutorgado" placeholder="País de origem">
+
+                        <label for="estadoCivil">Estado civil</label>
+                        <select id="estadoCivil_outorgado" name="estadoCivil" required >
+                            <option disabled selected>Selecione</option>
+                            <option value="solteiro">Solteiro(a)</option>
+                            <option value="casado">Casado(a)</option>
+                            <option value="divorciado">Divorciado(a)</option>
+                            <option value="separado">Separado(a)</option>
+                            <option value="viuvo">Viúvo(a)</option>
+                        </select>
+
+
+
+                        <label>OAB/estado</label>
+                        <input id="oab_outorgado" type="text" placeholder="Ex: 0000/SP" required>
+
+                        <label>Email</label>
+                        <input id="email_outorgado" type="email" placeholder="digite aqui" required>
+
+                        <label>Endereço</label>
+                        <input id="endereco_outorgado" type="text" placeholder="Rua, número, bairro, cidade, estado, CEP, complemento" required>
+
+                        <input id="gerarProcuracao" type="button" value="Gerar Procuração">
+                    </fieldset>   
+                </form>
+            </div>
+        </div>
+   </section> 
+
+   <section id="secaoResultado">
+        <div>
+            <div>
+                <h1>Procuração ad judicia et extra</h1>
+            </div>
+            <div>
+                <p>
+                    OUTORGANTE: <span id="campoNome_outorgante"></span>, <span id="campoNacionalidade_outorgante"></span>, <span id="campoEstatusCivil_outorgante"></span>, 
+                    inscrito(a) no CPF de nº <span id="campoCPF_outorgante"></span> , com endereço eletrônico <span id="campoEmail_outorgante"></span>,
+                    residente e domiciliado(a) na <span id="campoEndereço_outorgante"></span>.
+                </p>
+
+                <p>
+                    OUTORGADO: <span id="campoNome_outorgado"></span>, <span id="campoNacionalidade_outorgado"></span>, <span id="campoEstatusCivil_outorgado" ></span>, 
+                    advogado(a) inscrito(a) na Ordem dos Advogados do Brasil  o nº <span id="campoOAB_outorgado"></span>, 
+                    com endereço eletrônico <span id="campoEmail_outorgado"></span>,
+                     com escritório profissional situado na <span id="campoEndereço_outorgado"></span></span>.
+                </p>
+                
+                <p>
+                    Por meio do presente instrumento particular de mandato ad-judicia et extra, 
+                    o OUTORGANTE nomeia e constitui como seu procurador e advogado o OUTORGADO para representá-lo 
+                    em ação judicial a ser estipulada em contrato de prestação de serviços advocatícios.
+                </p>
+
+                <p>
+                    PODERES ESPECIAIS: conferem-se, para tanto, poderes para requerer benefícios; 
+                    requisitar, solicitar, assinar e aceitar qualquer documento; prestar e exigir esclarecimentos; 
+                    substabelecer; obter cópias integrais do processo, apresentar recursos, contestação, reconvenção, 
+                    acompanhar o processo desde a fase inicial até o exaurimento da via recursal, 
+                    providenciar a apresentação de provas, bem como produzi-las; receber citação, confessar, 
+                    reconhecer a procedência do pedido, transigir, desistir, renunciar ao direito sobre o qual se 
+                    funda a ação, receber RPV/Precatório; realizar transferências de valores a que tenha direito com 
+                    autorização de desconto de eventuais taxas cobradas pela instituição financeira, bem como, 
+                    honorários advocatícios contratuais e sucumbenciais; receber e dar quitação, firmar compromisso, 
+                    pedir justiça gratuita e assinar declaração de hipossuficiência econômica; enfim, praticar todos os 
+                    atos necessários ao fiel cumprimento deste mandato.
+                </p>
+
+                <div>
+                    _________________________________
+                            <span id="assinatura_outorgante"></span>
+                            <span id="cpf_assinatura_outorgante"></span>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <script src="script.js"></script>
+    
+</body>
+</html>
