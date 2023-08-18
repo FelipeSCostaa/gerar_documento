@@ -44,6 +44,8 @@ let secaoResultado = document.getElementById("secaoResultado");
 
 let meuForm = document.getElementById("meuForm");
 
+let titulo_principal = document.getElementById("titulo-principal");
+
 //---------------------
 
 botao_ir_outorgado.addEventListener('click', irOutorgado);
@@ -71,7 +73,7 @@ function irOutorgado(){
         }
     else{
         box_outorgante.style.display = 'none'
-        box_outorgado.style.display = 'block' 
+        box_outorgado.style.display = 'flex' 
     }     
 }
 
@@ -127,7 +129,8 @@ function gerarProcuracao(){
     }
     else{
         box_outorgado.style.display = 'none'
-        secaoResultado.style.display = 'block'
+        secaoResultado.style.display = 'flex'
+        titulo_principal.style.display = 'none'
     }
 
 

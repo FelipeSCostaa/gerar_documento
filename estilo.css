@@ -2,6 +2,22 @@
     display:none;
 }
 
+#box_outorgante{
+    display:flex;
+}
+
 #secaoResultado{
     display:none;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.padding{
+    padding: 15px;
 }
