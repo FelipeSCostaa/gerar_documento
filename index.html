@@ -9,12 +9,12 @@
 </head>
 <body>
 
-   <section class="d-flex justify-content-center padding">
+   <section class="d-flex justify-content-center padding bg-blue">
         <div class="w-80">
             <div>
                 <div class="text-center" id="titulo-principal"><h1>Preencha e gere uma procuração judicial:</h1></div>
                 <form id="meuForm">
-                    <fieldset class="flex-column gap-2 padding" id="box_outorgante">
+                    <fieldset class="flex-column gap-2 padding justify-content-center" id="box_outorgante">
                         <legend class="text-center">Dados do outorgante</legend>
                         <p>Aquele que irá assinar a procuração e dar poderes ao advogado:</p>
 
@@ -45,8 +45,9 @@
 
                         <label>Endereço</label>
                         <input id="endereco_outorgante" type="text" placeholder="Rua, número, bairro, cidade, estado, CEP, complemento" required>
-
-                        <input id="ir_outorgado" type="button" value="Próxima etapa" >
+                        <div class="d-flex justify-content-center margintop-10">
+                            <input id="ir_outorgado" type="button" value="Próxima etapa" >
+                        </div>
                     </fieldset>
 
         <!------------------------------------------------------------------------------------------------->
@@ -81,15 +82,17 @@
 
                         <label>Endereço</label>
                         <input id="endereco_outorgado" type="text" placeholder="Rua, número, bairro, cidade, estado, CEP, complemento" required>
-
-                        <input id="gerarProcuracao" type="button" value="Gerar Procuração">
+                        
+                        <div class="d-flex justify-content-center margintop-10">
+                            <input id="gerarProcuracao" type="button" value="Gerar Procuração">
+                        </div>
                     </fieldset>   
                 </form>
             </div>
         </div>
    </section> 
 
-   <section class="justify-content-center padding" id="secaoResultado">
+   <section class="justify-content-center padding bg-blue" id="secaoResultado">
         <div class="w-80 d-flex flex-column gap-3">
             <div class="text-center">
                 <h1>Procuração ad judicia et extra</h1>
@@ -134,7 +137,7 @@
                             <span id="cpf_assinatura_outorgante"></span>
                 </div>
             </div>
-            <div>
+            <div class="d-flex justify-content-center">
                 <button id="criarNova">Criar nova procuração</button>
             </div>
         </div>

@@ -21,3 +21,71 @@
 .padding{
     padding: 15px;
 }
+
+.bg-blue{
+    background-color: #0066ff5b;
+}
+
+.margintop-10{
+    margin-top: 15px;
+}
+
+input{
+    background-color: #0066ff00 ;
+    border: 0px;
+    border-bottom: 2px solid black;
+}
+
+input:focus{
+    outline: none;
+}
+
+label{
+    font-weight: bold;
+}
+
+
+
+
+select{
+    background-color: #0066ff00 ;
+    border: 0px;
+    width: 20%;
+}
+
+option{
+    background-color: #0066ff52 ;
+}
+
+#ir_outorgado{
+    border-radius: 5px;
+    border: 0px;
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(3, 3, 138);
+    color: white;
+}
+
+#gerarProcuracao{
+    border-radius: 5px;
+    border: 0px;
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(3, 3, 138);
+    color: white;
+}
+
+#ir_outorgado:hover{
+    background-color: rgba(3, 3, 138, 0.658); 
+    scale: 1.02;
+}
+
+#criarNova{
+    border-radius: 5px;
+    border: 0px;
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(3, 3, 138);
+    color: white;
+}
+
